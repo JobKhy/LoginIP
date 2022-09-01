@@ -1,0 +1,151 @@
+:root{
+    --color-main: #2C3C5B;
+    --color-background: #F5F5F5;
+    --color-title: #0AC5A8;
+    --color-text: white;
+    --color-error: red;
+    --color-light-main: hsla(220,35%,26%,.6);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Comfortaa';
+    
+}
+
+body{
+    justify-content: center;
+    background: #eaeded;
+}
+
+h1{
+    font-size: 3rem;
+    color: var(--color-title)
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+.contenedor{
+    padding: 20px 10px;  
+}
+
+a{
+    font-size:1rem;
+    color: var(--color-main);
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline
+}
+/*-------Header-------*/
+
+body header {
+    display: grid;
+    grid-template-columns: 25vw auto 25vw;
+    align-items: center;
+    justify-items: center ;
+    background: var(--color-main);
+    gap: 2rem;
+}
+
+body header:last-child{
+    justify-content: end;
+}
+
+body header .contenedor>h2 {
+    align-items: center;
+    color: var(--color-title);
+    justify-content: left;
+}
+
+body header nav{
+    float: right;
+    margin-right:5rem;
+}
+
+body header nav ul {
+    display: flex;
+    color: var(--color-text);
+    gap: 1rem;
+    list-style: none;
+   
+}
+
+body header nav>ul{
+    display: flex;
+    list-style: none;
+    gap: 2rem; 
+    color: var(--color-text);
+    text-align: center;
+}
+
+body header nav ul li ul{
+    display: none;
+    list-style: none;
+}
+
+body header nav>ul li:hover{
+    color: var(--color-title)
+}
+
+body header nav>ul li:hover ul {
+    justify-items: center;
+    background: var(--color-main);
+    display: block;
+    position: absolute;
+    float: left;
+}
+
+body header nav>ul li ul li{
+    margin: 10px 35px;
+    justify-content: left;
+}
+
+body header .contenedor>ul{
+    display: flex;
+    list-style: none;
+    gap: 2rem; 
+    color: var(--color-text);
+    text-align: center;
+}
+
+body header .contenedor ul li ul{
+    display: none;
+    list-style: none;
+}
+
+body header .contenedor ul li:hover{
+    color: var(--color-title)
+}
+
+body header .contenedor ul li:hover ul {
+    justify-items: center;
+    background: var(--color-main);
+    display: block;
+    position: absolute;
+    float: left;
+}
+
+body header .contenedor ul li ul li{
+    margin: 10px 35px;
+    justify-content: left;
+}
+
+/*--------------FRAME--------------*/
+
+body main {
+    display: flex;
+    background-color: #eaeded;
+    align-items: center;
+}
+body main iframe{
+    margin: 1px auto;
+    background: var(--color-background);
+    width: 75vw;
+    height: calc(100vh - 70px);
+}
